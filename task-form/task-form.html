@@ -1,0 +1,22 @@
+
+
+<div class='form-container' id='container'>
+    <a href="#!/">Back</a>
+    <div id ='titles'>
+
+      <h1 class="form-item">TODO List</h1>
+      <h4 class="form-item">A place to store the things that you have to do! </h4>
+    </div>
+      
+
+      <div id='filterItems'>
+      <input type="text" ng-model='$ctrl.search' class="form-item" placeholder="Filter your TODOs" /> 
+
+    <div id='listItems'>
+      <h3 ng-repeat='item in $ctrl.list | filter: $ctrl.search' > {{ item }} <button ng-click="$ctrl.remove($index)">X</button>
+      </h3>
+      <input type="text" ng-model='ctrl.newItem' placeholder="Add Item" /><button id= "add" ng-click='$ctrl.addList()'>Add</button>
+      
+      
+    </div>
+    

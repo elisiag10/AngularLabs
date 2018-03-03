@@ -1,0 +1,5 @@
+<ul class="form-item">
+	<li ng-repeat="item in $ctrl.list | filter: $ctrl.search" ng-cloak>
+		<span> {{item}}</span> <span ng-click="$ctrl.remove($index)" class="close-buttons"> x </span>
+	</li>
+</ul>

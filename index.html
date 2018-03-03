@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='en' ng-app="app">
+  <head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="list.css" rel="stylesheet" type="text/css" />
+    <title>Document</title>
+    <!-- <base href='/' /> -->
+  </head>
+
+  <body>
+    <ng-view></ng-view>
+    
+
+
+<!-- <div id='container'>
+
+    <div id ='titles'>
+      <h1>TODO List</h1>
+      <h4>A place to store the things that you have to do! </h4>
+    </div>
+      
+
+      <div id='filterItems'>
+      <input type="text" ng-model='test.search' placeholder="Filter your TODOs" /> 
+
+    <div id='listItems'>
+      <h3 ng-repeat='item in test.list | filter: test.search' > {{ item }} <button ng-click="test.remove($index)">X</button>
+      </h3>
+      <input type="text" ng-model='test.newItem' placeholder="Add Item" /><button id= "add" ng-click='test.addList()'>Add</button>
+      
+      
+    </div> -->
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src='list.js'></script>
+    <script src="task-list/task-list.js"></script>
+    <script src="task-list/task-list-controller.js"></script>
+    <script src="task-form/task-form.js"></script> 
+    <script src="task-form/task-form-controller.js"></script>
+    <script src="factories/data-factory.js"></script>
+    <script src="welcome/welcome.js"></script>
+    <script src="welcome/welcome-controller.js"></script>
+
+    
+
+
+  </body>
+</html>

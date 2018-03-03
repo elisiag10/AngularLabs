@@ -1,0 +1,26 @@
+html{
+	background: linear-gradient(to right, rgb(254, 179, 169), rgb(254, 101, 125));
+	margin: auto;
+	padding-top: 80px;
+
+}
+
+#container{
+
+	padding-top: 20px;
+	align-content: center;
+	flex-wrap: center;
+	background-color: #ffffff;
+	width: 400px;
+	min-height: 300px;
+	text-align: center;
+	margin: auto;
+	padding-bottom: 10px;
+
+}
+button {
+	background-color: pink;
+	color: ghostwhite;
+	font-size: 20px;
+	margin-top: 10px;
+}
